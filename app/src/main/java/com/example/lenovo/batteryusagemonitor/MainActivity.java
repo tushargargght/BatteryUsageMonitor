@@ -60,37 +60,8 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }*/
 
-        /*List<String> cmd = new ArrayList<>();
-        cmd.add("dumpsys batterystats");
-
-        ProcessBuilder pb = new ProcessBuilder(cmd);
-        Process process = null;
-        try {
-            process = pb.start();
-        } catch (IOException e) {
-            sb.append("ERROR1");
-            e.printStackTrace();
-        }
-
-        if(process != null) {
-            int errCode = 0;
-            try {
-                errCode = process.waitFor();
-            } catch (InterruptedException e) {
-                sb.append("ERROR2");
-                e.printStackTrace();
-            }
-
-            try {
-                sb.append(output(process.getInputStream()));
-            } catch (IOException e) {
-                sb.append("ERROR3");
-                e.printStackTrace();
-            }
-        }*/
-
         StringBuilder sb2 = new StringBuilder();
-        sb2.append("dumpsys batterystats | head -10");
+        sb2.append("dumpsys batterystats");
         //sb2.append(" > " + test.getAbsolutePath());
 
         Log.d("LOG!!!",sb2.toString());
@@ -128,33 +99,10 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-        /*final PackageManager packageManager = getPackageManager();
-        List<ApplicationInfo> installedApplications =
-                packageManager.getInstalledApplications(PackageManager.GET_META_DATA);
-
-
-
-        for (ApplicationInfo appInfo : installedApplications)
-        {
-            //sb.append("Package name : " + appInfo.packageName + "  " + "\nName: " + appInfo.loadLabel(packageManager) + "\nUID: " + appInfo.uid + "\n\n");
-        }*/
-
-
-
         t.append(sb);
 
         t.append("\nENDS!!\n\n");
 
-       /* t.append(this.getPackageManager().getNameForUid(10027) + "\n");
-        t.append(this.getPackageManager().getNameForUid(10123) + "\n");
-        t.append(this.getPackageManager().getNameForUid(10149) + "\n");
-        t.append(this.getPackageManager().getNameForUid(10148) + "\n");
-        t.append(this.getPackageManager().getNameForUid(10131) + "\n");
-        t.append(this.getPackageManager().getNameForUid(9001) + "\n");
-        t.append(this.getPackageManager().getNameForUid(1005) + "\n");
-        t.append(this.getPackageManager().getNameForUid(1027) + "\n");
-
-        t.append("\nFinish\n");*/
     }
 
     private static String output(InputStream inputStream) throws IOException {

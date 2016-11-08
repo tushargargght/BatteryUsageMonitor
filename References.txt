@@ -1,0 +1,8 @@
+1. Battery Life: How does the Android ‘Battery’ tool work, and why should developers care?
+https://www.apteligent.com/developer-resources/battery-life-how-does-the-android-battery-tool-work-and-why-should-developers-care/
+
+2. http://android.stackexchange.com/questions/20090/how-does-android-calculate-battery-consumption-by-apps
+
+3. http://stackoverflow.com/questions/11113349/dumpsys-permission-denial-in-java
+
+4. http://stackoverflow.com/questions/30139068/how-to-grant-permission-for-application-which-is-downloaded-from-play-store

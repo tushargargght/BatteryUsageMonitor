@@ -1,0 +1,10 @@
+=> Tried using adb shell dumpsys batterystats. Dump requires SystemOrSigned permission level [3]
+
+=> Though dumbsys batterystats contains per app power usage directly. [check batterystats.txt Line:10290]
+
+=> An app’s consumption depends on the hardware resources it uses, how long it uses them for, how often they’re used, and how hard they’re pushed. Thats how Android natively does it. [1]
+
+=> Tried giving permission through adb but didn't work. [4]
+
+Conclusion:
+According to me, need to do it the same way android does it. That is calculating the resources each app used and thus obtaining power integrating over all the resources.
